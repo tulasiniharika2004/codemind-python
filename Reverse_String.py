@@ -1,2 +1,4 @@
-n=input()
-print(n[::-1])
+x=input()
+words=x.split()
+words=list(reversed(words))
+print(" ".join(words))
