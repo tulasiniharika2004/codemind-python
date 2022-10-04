@@ -1,16 +1,21 @@
-def is_prime(l):
-    if l==1:
-        return 0
-    for i in range(2,int(l**0.5)+1):
-        if l%i==0:
-            return 0
-    return 1
 n=int(input())
-if is_prime(n)==1:
-    print(-1)
-else:
-    for i in range(1,n):
-        if n%i==0:
-            if is_prime(i) and is_prime(n//i):
-                print(i,n//i)
-                break
+a=[]
+x=0
+for i in range(1,n+1):
+    c=0
+    for j in range(1,i+1):
+        if i%j==0:
+            c+=1
+    if c==2:
+        a.append(i)
+for i in a:
+    for j in a:
+        if i!=j and i*j==n:
+            print(i,j)
+            x=1
+            break
+    if x==1:
+        break
+if x==0:
+    print("-1")
+    
