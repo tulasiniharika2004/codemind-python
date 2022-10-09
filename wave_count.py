@@ -12,3 +12,4 @@ if x==0:
     print(c)
 else:
     print("-1")
+        
