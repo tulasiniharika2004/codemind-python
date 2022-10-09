@@ -1,3 +1,5 @@
+
+
 a,b=map(int,input().split())
 x=list(map(int,input().split()))
 y=list(map(int,input().split()))
@@ -13,3 +15,4 @@ for j in d:
     if j not in c:
         k+=1
 print(s+k)
+    
