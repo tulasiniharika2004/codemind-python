@@ -1,4 +1,3 @@
-
 e,f=map(int,input().split())
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
@@ -15,4 +14,4 @@ for i in x:
         print(i,end=" ")
 for i in y:
     if i not in x:
-        print(i,end=" ")    
+        print(i,end=" ")
