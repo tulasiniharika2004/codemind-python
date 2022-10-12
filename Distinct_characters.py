@@ -1,10 +1,8 @@
-a=input()
-a=a.lower()
-s=""
-for i in a:
-    if a.count(i)==1:
-        s=s+i
-s=sorted(s)
-for i in s:
-    if i!=" ":
-        print(i,end="")
+n=input().lower()
+c=[]
+for i in n:
+    if(n.count(i)==1 and i!=" "):
+        c.append(i)
+        c.sort()
+for i in c:
+    print(i,end="")
