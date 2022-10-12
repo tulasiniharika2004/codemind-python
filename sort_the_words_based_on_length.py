@@ -1,8 +1,8 @@
-n = list(map(str,input().split()))
-for i in range(0,len(n)):
-    for j in range(0,len(n)):
-        if i!=j and len(n[i])<len(n[j]):
-            temp=n[i]
-            n[i]=n[j]
-            n[j]=temp
-print(*n)
+s=list(map(str,input().split()))
+for i in range(len(s)):
+    for j in range(len(s)):
+        if i!=j and len(s[i])<len(s[j]):
+            temp=s[i]
+            s[i]=s[j]
+            s[j]=temp
+print(*s)
