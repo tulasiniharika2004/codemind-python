@@ -1,8 +1,8 @@
-n=input()
-n=n.lower()
-n=set(n)
-c=0
-for i in n:
-    if i!=" ":
-        c+=1
-print(c)
+n=input().lower()
+s=set(n)
+c=[]
+for i in s:
+    if(i!=" "):
+        c.append(i)
+print(len(c))        
+        
