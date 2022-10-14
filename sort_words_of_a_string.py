@@ -1,22 +1,16 @@
-a=input()
-a=a.split()
-k=""
-p=0
+a=input().split()
 for i in a:
-    i=str(i)
-    n=""
-    p=0
+    c=[]
+    d=[]
     for j in i:
-        if j in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ":
-            n+=j
-    n=sorted(n)
-    for j in i:
-        if j not in "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ":
-            k+=j
+        if j.isalpha():
+            c.append(j)
+    c.sort()
+    k=0
+    for d in range(len(i)):
+        if i[d].isalpha():
+            print(c[k],end='')
+            k+=1
         else:
-            k+=n[p]
-            p+=1
-    k+=" "
-k=k.split()
-print(*k)
-            
+            print(i[d],end='')
+    print(end=' ')
