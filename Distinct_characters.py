@@ -1,8 +1,8 @@
 n=input().lower()
-c=[]
+temp=[]
 for i in n:
-    if(n.count(i)==1 and i!=" "):
-        c.append(i)
-        c.sort()
-for i in c:
-    print(i,end="")
+    if i not in temp and i!=" ":
+        temp.append(i)
+        temp.sort()
+for i in temp:
+    print(i,end='')
