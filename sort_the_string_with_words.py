@@ -1,4 +1,4 @@
-a=input()
-a=a.split()
-a=sorted(a)
-print(*a)
+n=input()
+s=n.split()
+s.sort()
+print(*s)
