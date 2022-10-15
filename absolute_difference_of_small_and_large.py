@@ -1,4 +1,6 @@
-a=input()
-a=a.split()
-for i in a:
-    print(abs(ord(max(i))-ord(min(i))),end=" ")
+n=list(map(str,input().split()))
+d=[]
+for i in n:
+    d.append(abs(ord(min(i))-ord(max(i))))
+for i in d:
+    print(i,end=' ')
