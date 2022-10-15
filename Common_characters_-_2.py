@@ -1,14 +1,13 @@
-a=input()
-a=a.lower()
-a=a.split()
-k=""
-l=str(a[0])
-for j in l:
-    c=0
-    for x in range(1,len(a)):
-        a[x]=str(a[x])
-        if j in a[x]:
-            c+=1
-    if c==len(a)-1:
-        k+=j
-print(len(k))
+s=input().lower()
+l=s.split()
+l1=list(l[0])
+l.remove(l[0])
+c=0
+e=[]
+for i in l1:
+    for j in range(len(l)):
+        if i not in l[j] and i not in e:
+            break
+    else:
+        e.append(i)
+print(len(e))
