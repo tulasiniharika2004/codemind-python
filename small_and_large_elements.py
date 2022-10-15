@@ -1,9 +1,2 @@
-a=input()
-a=a.split()
-for i in a:
-    print(min(i),end=" ")
-    break
-a=a[::-1]
-for i in a:
-    print(max(i),end=" ")
-    break
+s = input().split(" ")
+print(min(s[0]),max(s[-1]))
