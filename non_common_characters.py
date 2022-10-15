@@ -1,20 +1,18 @@
-a=input()
-b=input()
-a=a.lower()
-b=b.lower()
-a=set(a)
-b=set(b)
-s=""
-c=0
-for i in a:
-    if i!=' ':
-        if i not in b:
-                s=s+i
-for i in b:
-    if i!=' ':
-        if i not in a:
-                s=s+i
-s=sorted(s)
+s=input().lower()
+p=input().lower()
+r=""
 for i in s:
     if i!=" ":
-        print(i,end="")
+        if i not in p:
+            if i not in r:
+                r+=i
+for i in p:
+    if i!=" ":
+        if i not in s:
+            if i not in r:
+                    r+=i
+k=sorted(r)
+if len(r):
+    print("".join(k))
+else:
+    print("-1")
