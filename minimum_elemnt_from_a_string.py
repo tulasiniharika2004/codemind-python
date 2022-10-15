@@ -1,11 +1,7 @@
-a=input()
-a=a.split()
-x=a[-1]
-y=min(x)
-if ord(y)>=65 and ord(y)<=90:
-    if y.lower() in x:
-        print(y.lower())
-    else:
-        print(y)
+a=input().split()
+s=a[len(a)-1]
+k=min(s)
+if k and k.lower() in s:
+    print(k.lower())
 else:
-        print(y)
+    print(k)
