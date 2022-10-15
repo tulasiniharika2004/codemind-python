@@ -1,16 +1,15 @@
-a=input()
-b=input()
-a=a.lower()
-b=b.lower()
-a=set(a)
-b=set(b)
+s1=input()
+s2=input()
+s1=s1.lower()
+s2=s2.lower()
+s=""
 c=0
-for i in a:
-    if i!=' ':
-        if i not in b:
-                c+=1
-for i in b:
-    if i!=' ':
-        if i not in a:
-                c+=1
+for i in s1:
+    if i not in s2 and i not in s and i!=" ":
+        s+=i
+        c+=1
+for i in s2:
+    if i not in s1 and i not in s and i!=" ":
+        s+=i
+        c+=1
 print(c)
