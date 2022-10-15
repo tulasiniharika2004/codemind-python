@@ -1,17 +1,17 @@
-a=input()
-a=a.lower()
-a=a.split()
-k=""
-l=str(a[0])
-for j in l:
-    c=0
-    for x in range(1,len(a)):
-        a[x]=str(a[x])
-        if j in a[x]:
-            c+=1
-    if c==len(a)-1:
-        k+=j
+s=input().lower()
+l=s.split()
+k=[]
+w=list(l[0])
+l.remove(l[0])
+f=1
+for i in w:
+    for j in l:
+        if i not in j:
+            f=0
+            break
+    else:
+        k.append(i)
 if len(k)==0:
     print(-1)
 else:
-    print(k)
+    print(''.join(k))
