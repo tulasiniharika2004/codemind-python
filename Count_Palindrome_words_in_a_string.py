@@ -1,9 +1,8 @@
-n=input()
-n=n.lower()
-n=n.split()
+s=list(map(str,input().split()))
 c=0
-for i in n:
-    i=str(i)
-    if i==i[::-1]:
+for i in s:
+    i=i.lower()
+    res=i[::-1]
+    if res.lower()==i:
         c+=1
-print(c)
+print(c)        
