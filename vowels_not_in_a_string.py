@@ -1,12 +1,12 @@
 a=input()
-a=set(a)
-v="aeiou"
-s=""
+s=[]
 for i in a:
-    if i in v:
-        s=s+i
-for i in v:
+    if i in 'aeiou':
+        s.append(i)
+f=0
+for i in 'aeiou':
     if i not in s:
-        print(i,end=" ")
-if len(s)==5:
-    print("0")
+        f=1
+        print(i,end=' ')
+if(f==0):
+    print('0')
