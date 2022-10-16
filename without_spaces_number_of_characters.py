@@ -1,6 +1,6 @@
-a=input()
-count=0
-for i in a:
-    if i!=' ':
-        count+=1
-print(count)
+v=input()
+r=0
+for k in range(0,len(v)):
+    if((ord(v[k])!=32)):
+        r+=1
+print(r)
