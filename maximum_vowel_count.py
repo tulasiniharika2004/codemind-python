@@ -1,12 +1,9 @@
-a=input()
-a=a.lower()
-a=a.split()
-x=[]
-for i in a:
-    i=str(i)
-    c=0
+l=list(map(str,input().split()))
+d=[]
+for i in l:
+    count=0
     for j in i:
-        if j in "aeiou":
-            c+=1
-            x.append(c)
-print(max(x))
+        if j in "AEIOUaeiou":
+            count=count+1
+    d.append(count)
+print(max(d))
