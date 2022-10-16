@@ -1,10 +1,7 @@
-a=input()
-a=a.lower()
-a=a.split()
+s=input()
+a=list(s.split(" "))
 c=0
 for i in a:
-    i=str(i)
-    if i[0] in "aeiou" and i[-1] not in "aeiou":
+    if i[0] in "aeiouAEIOU" and i[-1] not in "aeiouAEIOU":
         c+=1
 print(c)
-     
