@@ -1,7 +1,11 @@
+n=input()
 a=input()
-b=input()
-if b in a:
-    print("True")
-    print(a.index(b))
-else:
-    print("False")
+s=0
+for i in range(len(n)):
+    if n[i]==a:
+        print(True)
+        print(i)
+        s=1
+        break
+if s!=1:
+    print(False)
